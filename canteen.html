@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canteen Ordering System</title>
+    <link rel="stylesheet" href="text.css">
+ <style>
+        /* CSS animation for menu items */
+        @keyframes scaleUp {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.03); }
+        }
+
+        .menu-item:hover {
+            animation: scaleUp 0.3s ease-in-out;
+        }
+.CMREC-CANTEEN {
+            font-size: 36px;
+            margin-top: -3cm; /* Move it 2 cm up */
+        }
+
+    </style>
+</head>
+<body>
+<section class="hero">
+    <img src="N:\PROJECT ETOKEN\pictues for project\canteen.png" alt="Hero Image" class="hero-image">
+    <div class="hero-content">
+        <h1 class="hero-heading">CMREC CANTEEN</h1>
+    </div>
+
+ <div id="foodQuotes" style="display: block">
+        <p id="quoteText">THINK FOOD - THINK CANTEEN</p>
+    </div>
+
+</section>
+    <main class="main">
+        <section id="menu" class="menu">
+            <!-- Menu items -->
+            <div class="menu-item" data-id="1">
+                <img src="N:\PROJECT ETOKEN\pictues for project\meals.jpeg" alt="Meals" class="menu-item-image">
+                <h3 class="menu-item-title">Meals</h3>
+                <p class="menu-item-price">Rs. 60</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="2">
+                <img src="N:\PROJECT ETOKEN\pictues for project\parota.jpeg" alt="Parota" class="menu-item-image">
+                <h3 class="menu-item-title">Parota</h3>
+                <p class="menu-item-price">Rs. 40</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="3">
+                <img src="N:\PROJECT ETOKEN\pictues for project\CHICKEN FRIED RICE.jpeg" alt="Chicken Rice" class="menu-item-image">
+                <h3 class="menu-item-title">Chicken Rice</h3>
+                <p class="menu-item-price">Rs. 60</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="4">
+                <img src="N:\PROJECT ETOKEN\pictues for project\chicken noodles.jpeg" alt="Chicken Noodles" class="menu-item-image">
+                <h3 class="menu-item-title">Chicken Noodles</h3>
+                <p class="menu-item-price">Rs. 50</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="5">
+                <img src="N:\PROJECT ETOKEN\pictues for project\egg rice.jpeg" alt="Egg Rice" class="menu-item-image">
+                <h3 class="menu-item-title">Egg Rice</h3>
+                <p class="menu-item-price">Rs. 50</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="6">
+                <img src="N:\PROJECT ETOKEN\pictues for project\egg noodles.jpeg" alt="Egg Noodles" class="menu-item-image">
+                <h3 class="menu-item-title">Egg Noodles</h3>
+                <p class="menu-item-price">Rs. 50</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+            <div class="menu-item" data-id="7">
+                <img src="N:\PROJECT ETOKEN\pictues for project\veg rice.jpeg" alt="Veg Fried Rice" class="menu-item-image">
+                <h3 class="menu-item-title">Veg Fried Rice</h3>
+                <p class="menu-item-price">Rs. 40</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+           
+ <div class="menu-item" data-id="9">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.es4WPD0-CFVsQLjHksjzhQHaF-&pid=Api&P=0&h=180" alt="veg manchurian" class="menu-item-image">
+                <h3 class="menu-item-title">veg manchurian</h3>
+                <p class="menu-item-price">Rs. 50</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+ <div class="menu-item" data-id="10">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.9WdlCQogCcZbJCkcJkPnegHaE6&pid=Api&P=0&h=180" alt="chicken manchurian" class="menu-item-image">
+                <h3 class="menu-item-title">chicken manchurian</h3>
+                <p class="menu-item-price">Rs. 70</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+ <div class="menu-item" data-id="11">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.681IpgaWSbgcWEfo65IHxAHaEK&pid=Api&P=0&h=180" alt="veg machuria rice" class="menu-item-image">
+                <h3 class="menu-item-title">veg manchuria rice</h3>
+                <p class="menu-item-price">Rs. 60</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+ <div class="menu-item" data-id="8">
+                <img src="https://2.bp.blogspot.com/-BK-KeOL_FKI/WHEyqF21qZI/AAAAAAAAAiY/xQzabUKm-1oglOo7lHRNEvNmdtIA0Xo9wCLcB/s1600/vn.jpg" alt="veg noodles" class="menu-item-image">
+                <h3 class="menu-item-title">veg noodles</h3>
+                <p class="menu-item-price">Rs. 40</p>
+                <button type="button" class="menu-item-button">Add to Cart</button>
+            </div>
+
+            <!-- Add more menu items here -->
+        </section>
+        <section id="cart" class="cart">
+            <h2 class="cart-title">Food Cart</h2>
+            <ul id="cart-items" class="cart-items">
+                <!-- Cart items will be displayed here -->
+            </ul>
+            <p class="cart-total">Total: <span id="cart-total">Rs. 0</span></p>
+            <button type="submit" id="checkout" class="checkout-button">Checkout</button>
+        </section>
+    </main>
+    <footer class="footer">
+        <!-- Add footer content here -->
+    </footer>
+    <div class="popup" id="addedToCartPopup">Added to Cart</div>
+    <script>
+        // Define menu items
+        const menuItems = [
+            { id: 1, name: 'Meals', price: 60 },
+            { id: 2, name: 'Parota', price: 40 },
+            { id: 3, name: 'Chicken Rice', price: 60 },
+            { id: 4, name: 'Chicken Noodles', price: 50 },
+            { id: 5, name: 'Egg Rice', price: 50 },
+            { id: 6, name: 'Egg Noodles', price: 50 },
+            { id: 7, name: 'Veg Fried Rice', price: 40 },
+            { id: 8, name: 'veg noodles', price: 40},
+            { id: 9, name: 'veg manchurian', price: 50},
+            { id: 10, name: 'chicken manchurian', price: 70},
+            { id: 11, name: 'veg manchuria rice', price: 60},
+        ];
+
+        const shoppingCart = [];
+
+        // Function to add items to the cart
+        function addToCart(item) {
+            shoppingCart.push(item);
+            updateCart();
+            showAddedToCartPopup();
+        }
+
+        // Function to remove items from the cart
+        function removeFromCart(item) {
+            const itemIndex = shoppingCart.indexOf(item);
+            if (itemIndex !== -1) {
+                shoppingCart.splice(itemIndex, 1);
+                updateCart();
+            }
+        }
+
+        // Function to update the cart display
+
+function updateCart() {
+    const cartSection = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    let total = 0;
+
+    cartSection.innerHTML = '';
+    const groupedItems = groupItemsByName(shoppingCart);
+    
+    groupedItems.forEach((group, index) => {
+        const cartItem = document.createElement('li');
+        const itemCount = group.items.length;
+        const item = group.items[0];
+        cartItem.innerHTML = `${item.name} X${itemCount} - Rs. ${item.price * itemCount} <button class="remove-button">Remove</button>`;
+        cartItem.dataset.index = index; // Store the index for removal
+        cartSection.appendChild(cartItem);
+        total += item.price * itemCount;
+    });
+
+    cartTotal.textContent = `Rs. ${total}`;
+}
+
+function groupItemsByName(items) {
+    const groupedItems = [];
+    
+    items.forEach((item) => {
+        const existingGroup = groupedItems.find((group) => group.name === item.name);
+        if (existingGroup) {
+            existingGroup.items.push(item);
+        } else {
+            groupedItems.push({ name: item.name, items: [item] });
+        }
+    });
+
+    return groupedItems;
+}
+
+
+        // Event listener for adding items to the cart
+        document.getElementById('menu').addEventListener('click', (event) => {
+            if (event.target.classList.contains('menu-item-button')) {
+                const menuItem = menuItems.find(item => item.id === parseInt(event.target.parentElement.dataset.id));
+                if (menuItem) {
+                    addToCart(menuItem);
+                }
+            }
+        });
+
+        // Event listener for removing items from the cart
+        document.getElementById('cart').addEventListener('click', (event) => {
+            if (event.target.classList.contains('remove-button')) {
+                const itemIndex = parseInt(event.target.parentElement.dataset.index);
+                const itemToRemove = shoppingCart[itemIndex];
+                removeFromCart(itemToRemove);
+            }
+        }
+        );
+
+function showAddedToCartPopup() {
+    const popup = document.getElementById('addedToCartPopup');
+    popup.classList.add('show');
+    setTimeout(() => {
+        popup.classList.remove('show');
+    }, 2000); // Hide the popup after 2 seconds
+}
+
+    </script>
+</body>
+</html>
